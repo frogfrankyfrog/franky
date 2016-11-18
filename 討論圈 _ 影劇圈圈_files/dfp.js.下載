@@ -1,0 +1,63 @@
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+googletag.cmd.push(function () {
+    googletag.defineSlot('/98300995/影劇圈圈_M_討論圈B_320x50_上', [[320, 100], [320, 50]], 'div-gpt-ad-1471599616112-0').addService(googletag.pubads());
+    googletag.defineSlot('/98300995/影劇圈圈_M_討論圈C_320x50_上', [[320, 100], [320, 50]], 'div-gpt-ad-1471599034123-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_M_討論圈C_300x250_下', [300, 250], 'div-gpt-ad-1471599034123-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_M_討論區首頁_300x250_上', [300, 250], 'div-gpt-ad-1471599219025-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_M_討論圈首頁_300x250_中', [300, 250], 'div-gpt-ad-1471599219025-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_M_新聞首頁_320x50_上', [320, 50], 'div-gpt-ad-1472185272659-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_M_新聞C_320x50_上', [[320, 100], [320, 50]], 'div-gpt-ad-1471599570471-0').addService(googletag.pubads());
+    googletag.defineSlot('/98300995/影劇圈圈_M_新聞C_300x250_下', [300, 250], 'div-gpt-ad-1471599570471-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_M_影劇庫C_300x250_中', [300, 250], 'div-gpt-ad-1471599764974-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_M_影劇庫C_300x250_下', [300, 250], 'div-gpt-ad-1471599764974-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_首頁_336x280_右1', [336, 280], 'div-gpt-ad-1471598468800-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_首頁_336x280_右2', [336, 280], 'div-gpt-ad-1471598468800-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_首頁_336x280_右3', [336, 280], 'div-gpt-ad-1471598468800-2').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈B_336x280_右1', [336, 280], 'div-gpt-ad-1471598879145-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈B_970x90_上', [970, 90], 'div-gpt-ad-1471598879145-1').addService(googletag.pubads());
+    googletag.defineSlot('/98300995/影劇圈圈_討論區B_970x90_下', [970, 90], 'div-gpt-ad-1471598879145-2').addService(googletag.pubads());
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈C_336x280_右1', [336, 280], 'div-gpt-ad-1471598969863-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈C_336x280_下左', [336, 280], 'div-gpt-ad-1471598969863-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈C_336x280_下右', [336, 280], 'div-gpt-ad-1471598969863-2').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈C_300x600_右1', [300, 600], 'div-gpt-ad-1471598969863-3').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈首頁_336x280_右1', [336, 280], 'div-gpt-ad-1471598797995-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈首頁_970x90_上', [970, 90], 'div-gpt-ad-1471598797995-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈首頁_970x90_中', [970, 90], 'div-gpt-ad-1471598797995-2').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_新聞C_336x280_右1', [336, 280], 'div-gpt-ad-1471598729801-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_新聞C_300x600_右1', [300, 600], 'div-gpt-ad-1471598729801-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_新聞C_336x280_下左', [336, 280], 'div-gpt-ad-1471598729801-2').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_新聞C_336x280_下右', [336, 280], 'div-gpt-ad-1471598729801-3').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_新聞首頁_336x280_右1', [336, 280], 'div-gpt-ad-1471598650530-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_影劇庫C_336x280_右1', [336, 280], 'div-gpt-ad-1471598582537-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_影劇庫C_970x90_中', [970, 90], 'div-gpt-ad-1471598582537-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_影劇庫C_970x90_下', [970, 90], 'div-gpt-ad-1471598582537-2').addService(googletag.pubads());//
+ 
+    
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈首頁_468x60_上', [468, 60], 'div-gpt-ad-1472630465104-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈首頁_468x60_中', [468, 60], 'div-gpt-ad-1472630465104-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈B_468x60_上', [468, 60], 'div-gpt-ad-1472630465104-2').addService(googletag.pubads());
+    googletag.defineSlot('/98300995/影劇圈圈_討論圈B_468x60_下', [468, 60], 'div-gpt-ad-1472630465104-3').addService(googletag.pubads());
+    googletag.defineSlot('/98300995/影劇圈圈_影劇庫C_468x60_下', [468, 60], 'div-gpt-ad-1472630465104-4').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_影劇庫C_468x60_中', [468, 60], 'div-gpt-ad-1472630465104-5').addService(googletag.pubads());//    
+    googletag.defineSlot('/98300995/影劇圈圈_福利社B_336x280_右1', [336, 280], 'div-gpt-ad-1472630510790-0').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_福利社B_336x280_右2', [336, 280], 'div-gpt-ad-1472630510790-1').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_福利社B_336x280_右3', [336, 280], 'div-gpt-ad-1472630510790-2').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_福利社C_336x280_右1', [336, 280], 'div-gpt-ad-1472630510790-3').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_福利社C_336x280_右2', [336, 280], 'div-gpt-ad-1472630510790-4').addService(googletag.pubads());//
+    googletag.defineSlot('/98300995/影劇圈圈_福利社C_336x280_右3', [336, 280], 'div-gpt-ad-1472630510790-5').addService(googletag.pubads());//    
+    
+    
+    
+    
+        //googletag.defineSlot('/98300995/test_970//728', [[728, 90], [970, 90]], 'div-gpt-ad-1472443440055-0').addService(googletag.pubads());
+        //googletag.defineSlot('/98300995/影劇圈圈_影劇庫C_468x60_中', [468, 60], 'div-gpt-ad-1472531591477-0').addService(googletag.pubads());        
+        
+        
+        
+    googletag.pubads().collapseEmptyDivs();
+    //googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+

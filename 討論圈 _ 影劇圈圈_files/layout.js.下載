@@ -1,0 +1,217 @@
+// /*
+// ===================
+// version 2.0
+// 2014 / 11 / 13
+// ===================
+// */
+// var tapTitleToTop = false;
+// var scroll_lock = false;
+// var NUA = navigator.userAgent;
+// var currentPos = 0;
+// var MClose = $(".mmMenuClose");
+// var MOpen = $(".mmMenuOpen");
+
+// var mmmW = $(window).width();
+
+
+// $(function() {
+// var scroll_lock = false;
+// var NUA = navigator.userAgent;
+// var currentPos = 0;
+// var MClose = $(".mmMenuClose");
+// var MOpen = $(".mmMenuOpen");
+// // ========== MENU str ==========
+// 	// PC resize pass 660 三線收納 debug
+// 	function MD() {
+// 		if ($(window).width() < 644) {
+// 			MOpen.css({display: "block"});
+// 			MClose.css({display: "none"});
+// 		} else {
+// 			// MOpen.css({display: "none"});
+// 			// MClose.css({display: "none"});
+// 			// $("#mmLog").removeClass("move_three_line");
+// 		};    
+// 	};
+// 	// WORK 三線收納 PC only debug
+// 	if (!NUA.match(/(iPhone|iPad|iPod|Android)/)) {
+// 		MOpen.hover(function(){
+// 			$(this).addClass("mmMenuOpenHover");
+// 		},function(){
+// 			$(this).removeClass("mmMenuOpenHover");
+// 		});
+// 		// MD();
+// 		$(window).resize(function(){
+// 			MD();
+// 			$("#mmLog").removeClass("move_three_line");
+// 		});
+// 	}else{
+// 		$(window).resize(function(){
+// 			$(".mmMenuOpen").css({display: "block"});
+// 			$(".mmMenuClose").css({display: "none"});
+// 			$("#mmLog").removeClass("move_three_line");
+// 		});
+// 		$(window).load(function(){
+// 			$(window).resize(function(){
+// 				/*計算scroll是否超過高度 超過就讓cell最下面*/
+// 					// alert(window.innerWidth);
+// 					if(window.innerWidth <= 983){
+// 						h1 = $("#mmAreaLeft").height();
+// 						h2 = $("#mmLogOut").height();
+// 						h3 = $("#mmLogIn").height();
+// 						hh = h1+h2+h3;
+
+// 						hw = $(window).height();
+// 						$("#mmLog").css({height:hw});
+
+// 						hr = hw-hh;
+					
+// 						if(hr>=240){
+// 							$("#cell").css("position","absolute");
+// 							$("#cell").css("bottom","0");
+// 						}else{
+// 							$('#cell').removeAttr("style");
+// 						}
+// 					}
+					
+					
+					
+
+// 			})
+// 		});
+
+// 	};
+
+// // ========== #MM LOG OPEN & CLOSE str ==========
+// 	// BTN OPEN & CLOSE CLICK EVENT
+// 	function LOG_CELL_SLIDE_IN() {
+// 		// $("#mmLog").stop(true, false).animate({left: 0}, 100);
+// 		$("#mmLog").addClass("move_three_line");
+// 	};
+// 	function LOG_SLIDE_OUT() {
+// 		// $("#mmLog").stop(true, false).animate({left: "-220px"}, 100);
+// 		$("#mmLog").removeClass("move_three_line");
+// 	};
+
+// 	MOpen.click(function(e) {
+// 		u = navigator.userAgent;
+// 		// if(u.indexOf('iPad')==-1 && u.indexOf('iPhone')==-1){
+// 			setTimeout(function(){
+// 				$("#mmLog").niceScroll({scrollspeed:1,cursorcolor:"rgba(0, 0, 0, 0.3)",cursorborder:"0px"});
+// 				$(".nicescroll-cursors").parent().css("left","210px");
+// 			},300)
+// 		// }
+		
+		
+
+// 		// $("#welcome_msg").hide();
+// 		// console.log('menu open');
+// 		scroll_lock = true;
+// 		tapTitleToTop = true;
+// 		if (NUA.match(/(SAMSUNG)/)) {
+// 			currentPos = $(window).scrollTop();
+// 			// console.log("currentPos: " + currentPos);
+// 			$(window).scrollTop(0);
+// 			$.scrollLock(true);
+// 		};
+// 		MOpen.css({display: "none"});
+// 		MClose.css({display: "block"});
+
+// 		//打開三條線關閉搜尋
+// 		$("#mmwSearch").slideUp(50);
+// 		$(".wSearch").removeClass("wSearchOn");
+// 		//打開三條線關閉通知
+// 		if($(".notiM").hasClass("noOn")){
+// 			$(".notiM").click();
+// 		}
+// 		//打開三條線隱藏三條線站內信數字
+// 		$("#three_line__unread_mail_count").hide();
+
+
+// 		LOG_CELL_SLIDE_IN();
+// 		e.preventDefault();
+
+
+// 		/*計算scroll是否超過高度 超過就讓cell最下面*/
+
+// 		h1 = $("#mmAreaLeft").height();
+// 		h2 = $("#mmLogOut").height();
+// 		h3 = $("#mmLogIn").height();
+// 		hh = h1+h2+h3;
+
+// 		hw = $(window).height();
+// 		$("#mmLog").css({height:hw});
+
+// 		hr = hw-hh;
+		
+// 		if(hr>=240){
+// 			$("#cell").css("position","absolute");
+// 			$("#cell").css("bottom","0");
+// 		}else{
+// 			$('#cell').removeAttr("style");
+// 		}
+
+		
+
+// 	});
+// 	MClose.click(function(e) {
+
+// 		// $("#welcome_msg").show();
+// 		// console.log('menu close');
+// 		if (NUA.match(/(SAMSUNG)/)) {
+// 			$.scrollLock(false);
+// 			$(window).scrollTop(currentPos);
+// 		};
+// 		scroll_lock = false;
+// 		window.setTimeout(function(){
+//             tapTitleToTop = false;
+//         },10);
+
+// 		MClose.css({display: "none"});
+// 		MOpen.css({display: "block"});
+
+// 		//打開三條線顯示三條線站內信數字
+// 		$("#three_line__unread_mail_count").show();
+
+// 		LOG_SLIDE_OUT();
+// 		e.preventDefault();
+
+
+// 	});
+
+// 	$("#mmBody").click(function() {
+// 		if(!scroll_lock) return true;
+// 		if (NUA.match(/(SAMSUNG)/)) {
+// 			$.scrollLock(false);
+// 			$(window).scrollTop(currentPos);
+// 		}
+// 		scroll_lock = false;
+// 		tapTitleToTop = false;
+// 		MClose.css({display: "none"});
+// 		MOpen.css({display: "block"});
+// 		LOG_SLIDE_OUT();
+// 		return false;
+// 	});
+// 	// $("#mmBody").on("touchstart",function(){
+		
+// 	// 	console.log("start");
+// 	// 	$.scrollLock(false);
+// 	// })
+// // ========== #MM LOG OPEN & CLOSE end ==========
+
+// // ========== MM FOOTER str ==========
+	
+// 	$(window).scroll(function() {
+// 		$("#mmFooterBox").slideUp(100);
+// 	});
+// // ========== MM FOOTER end ==========
+
+// // ========== LABLE CLICK str ==========
+// 	// $("#mmAreaTop a").click(function(){
+// 	// 	$(this).toggleClass("LableOn");
+// 		// return false;
+// 	// });
+// // ========== LABLE CLICK end ==========
+// });
+
+
+
