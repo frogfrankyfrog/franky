@@ -1,0 +1,108 @@
+.dfp_ad_container{
+    padding:0 !important;
+    background-color: white;
+    text-align: center;
+}
+
+.dfp_ad_container div[id^=div-gpt-ad-]{
+    margin:0 auto;
+
+}
+
+.dfp_mobile_336{
+    text-align: center;
+}
+
+.mt5{
+    margin-top:5px;
+}
+.mb5{
+    margin-bottom:5px;
+}
+.mb25{
+    margin-bottom:25px;
+}
+.mlp12{
+    margin-left: -12px;
+}
+
+.mt10{
+    margin-top:10px;
+}
+
+.dfp_ad_container_double336{
+    padding-top:20px; 
+    width: 100%;
+    text-align: center;
+    overflow:hidden;
+}
+
+.dfp_ad_container_336{
+    padding:0px !important;
+    width:50%;
+    float:left;
+    background-color: white;
+    text-align: center;
+}
+
+.dfp_ad_container_336 div[id^=div-gpt-ad-]{
+    margin:0 auto;
+
+}
+
+
+
+
+.dfp_desktop_336_280{ /* 右側 336x280    */
+    margin-bottom: 10px;
+}
+.dfp_desktop_336_600{ /* 右側 336x600    */
+    margin-bottom: 10px;
+}
+
+.dfp_desktop_970_90{ /* 橫幅 970*90 */
+    padding:0px !important;
+    height:auto !important;
+    max-width: 970px;
+    width:100%;
+
+}
+
+.dfp_desktop_970_90 div[id^=div-gpt-ad]{
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width:1424px){
+    .dfp_desktop_970_90{
+        /*width: 616px;*/
+        max-width:100%;
+        padding: 0px !important;
+    }
+}
+
+
+
+@media screen and (max-width:1023px){
+    .dfp_desktop_336_280{
+        display:none;
+    }
+
+    .dfp_desktop_336_600{ /* 右側 336x600    */
+        display:none;
+    }    
+
+}
+
+@media screen and (max-width:767px){
+
+
+}
+
+@media screen and (max-width:321px){
+    .dfp_ad_container{
+        /*max-width: 300px;*/
+        overflow: hidden;
+        /*margin-left: -5px;*/
+    }
+}

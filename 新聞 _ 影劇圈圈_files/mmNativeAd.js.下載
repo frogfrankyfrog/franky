@@ -1,0 +1,45 @@
+$(window).ready(function(){
+    var outerA = $('<a>').addClass('mmNewsBox').attr('href','http://ads.fetnet.net/TrackingLog/stmc.aspx?ids=4ZZWW').addClass('mmNAD01');
+    var mmSort = $('<div>').addClass('mmSort').text('贊助');
+    var _img = $('<img>').attr('src','http://www.moviemovie.com.tw/index_img/TVOD_BN_336x200_v1.jpg');
+    var mmNewsBoxCont = $('<div>').addClass('mmNewsBoxCont').css({'background-color': '#e8feff'});
+    var _h2 = $('<h2>').text('院線電影任你選  正版高清線上看');
+    var _h2_span = $('<span>').text('friDay 影音');
+    var _p = $('<p>').text('錯過的院線電影這裡看，只要 49 元起！正版高畫質、中文字幕，支援手機 / 電腦 / 電視，斷點續播，隨時想看就看。');
+    
+    _h2.append(_h2_span);
+    mmNewsBoxCont.append(_h2);
+    mmNewsBoxCont.append(_p);
+    
+    var nad01 = outerA.append(mmSort).append(_img).append(mmNewsBoxCont);
+    
+    $('#mmNewsHot a:first-child').eq(0).after(nad01);
+    
+    if(typeof(ga) != "undefined"){
+        ga('send', 'event', '原生廣告-friDay', '曝光' , window.location.href,{
+            nonInteraction: true
+        });
+    }else{
+        console.log('ga not init.');
+//        $.getScript('https://www.google-analytics.com/analytics.js',function(){
+//            ga('send', 'event', 'friDay 廣告測試', '曝光' , window.location.href);
+//        });
+    }
+
+    
+    $(document).on('click','.mmNAD01',function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        
+        if(typeof(ga) != "undefined"){
+            ga('send', 'event', '原生廣告-friDay', '點擊' , window.location.href);
+        }else{
+            console.log('ga not init.');
+        }
+        
+        window.open(href);
+        
+    });
+    
+});
+
