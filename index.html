@@ -27,12 +27,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	})(window,document,'script','dataLayer','GTM-N74VVT9');</script>
 	<!-- End Google Tag Manager -->
 		
-
-	<meta property="og:url"           content="https://www.facebook.com/TaiwanDrama.moviemovie/" />
-	<meta property="og:type"          content="website" />
-	<meta property="og:title"         content="Your Website Title" />
-	<meta property="og:description"   content="Your description" />
-	<meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
 		
 		
 		
@@ -134,23 +128,46 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	<div class="fb-like" data-href="https://www.facebook.com/TaiwanDrama.moviemovie/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 	
 	
-	
 	<!-- END FB 按讚 -->
 	
 	
-	<!-- fb分享 
-	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=766294653416391";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<div class="fb-share-button" data-href="http://www.moviemovie.com.tw/news/view/3290" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.moviemovie.com.tw%2Fnews%2Fview%2F3290&amp;src=sdkpreparse">分享</a></div>
 	
-	<!-- end fb分享  -->
+	
+<script>
+ window.fbAsyncInit = function(){
+  FB.Event.subscribe('edge.create',function(targetURL) {
+       ga('send', 'social', 'Facebook', 'like', targetURL);   
+ 
+      }
+  );
+ 
+   FB.Event.subscribe('edge.remove',function(URL) {
+       ga('send', 'social', 'Facebook', 'unlike', URL);   
+ 
+      }
+  ); 
+ 
+  FB.Event.subscribe('message.send',function(location) {
+       ga('send', 'social', 'Facebook', 'send', location);   
+ 
+      }
+  );  
+ 
+   FB.Event.subscribe('comment.create',function(href) {
+       ga('send', 'social', 'Facebook', 'comment added', href);   
+ 
+      }
+  ); 
+ 
+   FB.Event.subscribe('comment.remove',function(loc) {
+       ga('send', 'social', 'Facebook', 'comment deleted', loc);   
+ 
+      }
+  );  
+ 
+};
+</script>
+<!-- Facebook Social Interaction Tracking -->
 	
 	
 	
