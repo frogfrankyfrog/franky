@@ -297,7 +297,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 					</li>
 					
 											<li>
-							<a href="" onmouseover="ga('send', 'event', 'category', 'action', 'label');" >交通資訊</a>
+							<a href="" onmouseover=" dataLayer.push({
+	'event' : 'hover_menu',
+	'event_category':'hover',
+	'event_action':'hover',
+	'event_label':'影星'
+	 
+	
+});" >交通資訊</a>
 					/*無用，還是要用 jS 才行*/	
 							<br>					
 						<a class="wl-cart-summary" href="www.google.com" onClick="ga('send', 'event', 'category', 'action', 'label');"> Google </a>
