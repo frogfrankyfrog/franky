@@ -100,24 +100,38 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 		<!-- EC PUSH 	-->
 
-	<script>
+<script>
 dataLayer.push({
-  "event": "productClick",
   "ecommerce": {
-    "click": {
-      "actionField": {
-        "list": "新品" /*url 中最後的中文 tag*/
-      },
-      "products": [{
+  "event": "IMM",
+    "currencyCode": "TWD",
+    "impressions": [{
       "id": "105184812",
       "name": "波浪滾邊一字領上衣1",
       "price": "440.00",
       "brand": "heartbeat",
       "category": "上衣",
       "position": 1,
-      "coupon": "不列入任何折扣計算"
-      }]
-    }
+      "list": "新品" /*url 中最後的中文 tag*/
+    },
+    {
+      "id": "105184812",
+      "name": "波浪滾邊一字領上衣2",
+      "price": "330.00",
+      "brand": "heartbeat",
+      "category": "上衣",
+      "position": 2,
+      "list": "新品" /*url 中最後的中文 tag*/
+    },
+    {
+      "id": "105184812",
+      "name": "波浪滾邊一字領上衣3",
+      "price": "550.00",
+      "brand": "heartbeat",
+      "category": "上衣",
+      "position": 3,
+      "list": "新品" /*url 中最後的中文 tag*/
+    }]
   }
 });
 </script>
