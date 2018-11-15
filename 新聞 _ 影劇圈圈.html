@@ -179,7 +179,18 @@ dataLayer.push({
   "ecommerce": {
     "refund": {
       "actionField": {"id": "20181115d"} ,
-"dimension6": "客服自己按的", /*信用卡付款 or ATM轉帳 or 超商取貨付款*/// Transaction ID. Required for purchases and refunds.
+      "products": [{
+       "id": "105184812",
+        "dimension5": "退訂換到產品1",
+	"dimension6": "退訂換到產品1",
+        "quantity": 1
+      },
+      {
+       "id": "105184812",
+        "dimension5": "退訂換到產品2",
+	"dimension6": "退訂換到產品2",
+        "quantity": 3
+      }]
     }
   }
 });
@@ -188,21 +199,7 @@ dataLayer.push({
 </script>
 
 	
-	<script>
-dataLayer.push({
-  "event": "purchase",
-  "ecommerce": {
-    "purchase": {
-      "actionField": {
-        "id": "20181115", /*訂單 ID*/
-        "affiliation": "heartbeat",
-        "dimension5": "重推", /*信用卡付款 or ATM轉帳 or 超商取貨付款*/
-	 "dimension6": "重推" /*信用卡付款 or ATM轉帳 or 超商取貨付款*/
-      }
-    }
-  }
-});
-</script>
+	
 	
 	</head>
 
