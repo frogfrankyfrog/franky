@@ -178,8 +178,27 @@ dataLayer.push({
 "event": "refund",
   "ecommerce": {
     "refund": {
-      "actionField": {"id": "20181115b"} ,
+      "actionField": {"id": "20181115d"} ,
 "dimension6": "客服自己按的", /*信用卡付款 or ATM轉帳 or 超商取貨付款*/// Transaction ID. Required for purchases and refunds.
+    }
+  }
+});
+
+
+</script>
+
+	
+	<script>
+dataLayer.push({
+  "event": "purchase",
+  "ecommerce": {
+    "purchase": {
+      "actionField": {
+        "id": "20181115", /*訂單 ID*/
+        "affiliation": "heartbeat",
+        "dimension5": "重推", /*信用卡付款 or ATM轉帳 or 超商取貨付款*/
+	 "dimension6": "重推" /*信用卡付款 or ATM轉帳 or 超商取貨付款*/
+      }
     }
   }
 });
