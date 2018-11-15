@@ -165,6 +165,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N74VVT9');</script>
 <!-- End Google Tag Manager -->
 	
+	
+
+
+<script>
+// Refund an entire transaction by providing the transaction ID. This example assumes the details
+// of the completed refund are available when the page loads:
+dataLayer.push({
+  'ecommerce': {
+    'refund': {
+      'actionField': {'id': '20181115'} 
+"dimension5": "客服自己按的", /*信用卡付款 or ATM轉帳 or 超商取貨付款*/// Transaction ID. Required for purchases and refunds.
+    }
+  }
+});
+</script>
+	
 	</head>
 
 <body tcap-name="mainman">
