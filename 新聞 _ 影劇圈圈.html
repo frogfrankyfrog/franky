@@ -2,8 +2,18 @@
 <!-- saved from url=(0033)http://www.moviemovie.com.tw/news -->
 <html><head>
 	
-	
+<script>	
+function makeid() {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
+  for (var i = 0; i < 5; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
+</script>
+	
 	
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -13,12 +23,16 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-66494781-3', {
   'storage': 'none',
-  'clientId': '76c24efd-ec42-492a-92df-c62cfd4540a3'
+  'clientId': makeid()
 });
 ga('send', 'pageview');
 </script>	
 
-	
+
+
+
+
+
 	
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
